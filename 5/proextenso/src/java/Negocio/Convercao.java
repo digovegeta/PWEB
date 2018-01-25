@@ -15,8 +15,8 @@ public class Convercao {
     private String cpf;
     private double salario;
     private int  valor;
-    private int totalDeCasas;
-    private String centavos;
+//    private int totalDeCasas;
+//    private String centavos;
     private String unidades;
     private String dezenas;
     private String centenas;
