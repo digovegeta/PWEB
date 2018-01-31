@@ -12,7 +12,7 @@
         <title>Novela</title>
     </head>
     <body>
-        <jsp:useBean id="v" class="Negocio.Forca" scope="page" />
+        <jsp:useBean id="v" class="Negocio.Forca" scope="session" />
         <jsp:setProperty name="v" property="*" />
         <jsp:getProperty name="v" property="resposta" />
         <br>

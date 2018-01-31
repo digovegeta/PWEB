@@ -1,6 +1,6 @@
 <%-- 
-    Document   : Novelas
-    Created on : 30-Jan-2018, 20:46:53
+    Document   : Filmes
+    Created on : 30-Jan-2018, 20:46:41
     Author     : Diogo Cardoso
 --%>
 
@@ -9,14 +9,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Novela</title>
+        <title>Filme</title>
     </head>
     <body>
-        <jsp:useBean id="v" class="Negocio.Forca" scope="page" />
+        <jsp:useBean id="v" class="Negocio.Forca" scope="session" />
         <jsp:setProperty name="v" property="*" />
         <jsp:getProperty name="v" property="resposta" />
         <br>
-        <form action="Novela.jsp" method="GET">
+        <form action="Filme.jsp" method="GET">
             <input type="text" name="letra" maxlength="1" />
             <input type="submit" value="Verificar"/>
         </form>

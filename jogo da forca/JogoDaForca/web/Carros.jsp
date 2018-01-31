@@ -12,13 +12,13 @@
         <title>Carro</title>
     </head>
     <body>
-        <jsp:useBean id="v" class="Negocio.Forca" scope="session" />
+        <jsp:useBean id="v" class="Negocio.Forca" scope="page" />
         <jsp:setProperty name="v" property="*" />
         <jsp:getProperty name="v" property="resposta" />
         <br>
         <form action="Carro.jsp" method="GET">
             <input type="text" name="letra" maxlength="2" />
-            <input type="submit" value="Verificar"/>
+            <input type="submit" value="Verificar" />
         </form>
     </body>
 </html>

@@ -6,6 +6,7 @@
 package Controle;
 
 import java.lang.String;
+import java.util.Random;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -35,15 +36,16 @@ public class Modalidade extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-          String acao = request.getParameter("bt");
-          
-          if(acao.equalsIgnoreCase("novela")){
-              request.getRequestDispatcher("Novela.jsp").forward(request, response);
-          }else if(acao.equalsIgnoreCase("filme")){
-              request.getRequestDispatcher("Filme.jsp").forward(request, response);
-          }else if(acao.equalsIgnoreCase("carro")){
-              request.getRequestDispatcher("Carro.jsp").forward(request, response);              
-          }
+
+            String acao = request.getParameter("bt");
+
+            if(acao.equalsIgnoreCase("1")){
+                request.getRequestDispatcher("Filme.jsp").forward(request, response);
+            }else if(acao.equalsIgnoreCase("2")){
+                request.getRequestDispatcher("Novela.jsp").forward(request, response);
+            }else if(acao.equalsIgnoreCase("3")){
+                request.getRequestDispatcher("Carro.jsp").forward(request, response);              
+            }
         }
     }
 
