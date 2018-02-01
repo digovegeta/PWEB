@@ -14,6 +14,6 @@
     <body>
         <jsp:useBean id="voto" class="Negocio.Voto" scope="session" />
         <jsp:setProperty name="voto" property="*" />
-        <jsp:getProperty name="voto" property="votadoNome" />
+        <jsp:getProperty name="voto" property="voto" />
     </body>
 </html>
